@@ -1,0 +1,150 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" font-size="24" font-weight="bold" fill="#2c3e50">
+    DNA, Genes, and Chromosomes: The Hierarchy
+  </text>
+  
+  <!-- Chromosome Level -->
+  <g id="chromosome">
+    <!-- Chromosome shape -->
+    <path d="M 100 80 Q 100 60 120 60 L 280 60 Q 300 60 300 80 L 300 140 Q 300 160 280 160 L 120 160 Q 100 160 100 140 Z" 
+          fill="#e74c3c" stroke="#c0392b" stroke-width="2"/>
+    
+    <!-- Centromere -->
+    <rect x="195" y="60" width="10" height="100" fill="#8e44ad"/>
+    
+    <!-- Chromosome label -->
+    <text x="200" y="50" text-anchor="middle" font-size="16" font-weight="bold" fill="#2c3e50">Chromosome</text>
+    <text x="200" y="180" text-anchor="middle" font-size="12" fill="#7f8c8d">Contains many genes</text>
+    <text x="200" y="195" text-anchor="middle" font-size="12" fill="#7f8c8d">Made of condensed DNA</text>
+  </g>
+  
+  <!-- Arrow from chromosome to genes -->
+  <path d="M 250 220 L 250 260" stroke="#34495e" stroke-width="3" marker-end="url(#arrowhead)" fill="none"/>
+  
+  <!-- Gene Level -->
+  <g id="genes">
+    <!-- Gene 1 -->
+    <rect x="80" y="280" width="60" height="20" fill="#3498db" stroke="#2980b9" stroke-width="1"/>
+    <text x="110" y="295" text-anchor="middle" font-size="10" fill="white" font-weight="bold">Gene A</text>
+    
+    <!-- Gene 2 -->
+    <rect x="160" y="280" width="80" height="20" fill="#27ae60" stroke="#229954" stroke-width="1"/>
+    <text x="200" y="295" text-anchor="middle" font-size="10" fill="white" font-weight="bold">Gene B</text>
+    
+    <!-- Gene 3 -->
+    <rect x="260" y="280" width="70" height="20" fill="#f39c12" stroke="#e67e22" stroke-width="1"/>
+    <text x="295" y="295" text-anchor="middle" font-size="10" fill="white" font-weight="bold">Gene C</text>
+    
+    <!-- Genes label -->
+    <text x="200" y="325" text-anchor="middle" font-size="14" font-weight="bold" fill="#2c3e50">Genes</text>
+    <text x="200" y="340" text-anchor="middle" font-size="12" fill="#7f8c8d">Specific DNA sequences</text>
+    <text x="200" y="355" text-anchor="middle" font-size="12" fill="#7f8c8d">Code for proteins</text>
+  </g>
+  
+  <!-- Arrow from genes to DNA -->
+  <path d="M 200 375 L 200 415" stroke="#34495e" stroke-width="3" marker-end="url(#arrowhead)" fill="none"/>
+  
+  <!-- DNA Level -->
+  <g id="dna">
+    <!-- DNA double helix -->
+    <g transform="translate(150, 430)">
+      <!-- First strand -->
+      <path d="M 0 20 Q 20 0 40 20 Q 60 40 80 20 Q 100 0 120 20" 
+            stroke="#e74c3c" stroke-width="4" fill="none"/>
+      
+      <!-- Second strand -->
+      <path d="M 0 40 Q 20 60 40 40 Q 60 20 80 40 Q 100 60 120 40" 
+            stroke="#3498db" stroke-width="4" fill="none"/>
+      
+      <!-- Base pairs -->
+      <line x1="10" y1="22" x2="10" y2="38" stroke="#95a5a6" stroke-width="2"/>
+      <line x1="30" y1="18" x2="30" y2="42" stroke="#95a5a6" stroke-width="2"/>
+      <line x1="50" y1="22" x2="50" y2="38" stroke="#95a5a6" stroke-width="2"/>
+      <line x1="70" y1="18" x2="70" y2="42" stroke="#95a5a6" stroke-width="2"/>
+      <line x1="90" y1="22" x2="90" y2="38" stroke="#95a5a6" stroke-width="2"/>
+      <line x1="110" y1="18" x2="110" y2="42" stroke="#95a5a6" stroke-width="2"/>
+      
+      <!-- Base letters -->
+      <text x="8" y="18" font-size="8" fill="#e74c3c" font-weight="bold">A</text>
+      <text x="8" y="45" font-size="8" fill="#3498db" font-weight="bold">T</text>
+      <text x="28" y="14" font-size="8" fill="#e74c3c" font-weight="bold">G</text>
+      <text x="28" y="49" font-size="8" fill="#3498db" font-weight="bold">C</text>
+      <text x="48" y="18" font-size="8" fill="#e74c3c" font-weight="bold">C</text>
+      <text x="48" y="45" font-size="8" fill="#3498db" font-weight="bold">G</text>
+      <text x="68" y="14" font-size="8" fill="#e74c3c" font-weight="bold">T</text>
+      <text x="68" y="49" font-size="8" fill="#3498db" font-weight="bold">A</text>
+      <text x="88" y="18" font-size="8" fill="#e74c3c" font-weight="bold">A</text>
+      <text x="88" y="45" font-size="8" fill="#3498db" font-weight="bold">T</text>
+      <text x="108" y="14" font-size="8" fill="#e74c3c" font-weight="bold">G</text>
+      <text x="108" y="49" font-size="8" fill="#3498db" font-weight="bold">C</text>
+    </g>
+    
+    <!-- DNA label -->
+    <text x="200" y="520" text-anchor="middle" font-size="14" font-weight="bold" fill="#2c3e50">DNA Double Helix</text>
+    <text x="200" y="535" text-anchor="middle" font-size="12" fill="#7f8c8d">Made of nucleotides (A, T, G, C)</text>
+    <text x="200" y="550" text-anchor="middle" font-size="12" fill="#7f8c8d">Complementary base pairing</text>
+  </g>
+  
+  <!-- Right side: Detailed explanation -->
+  <g id="explanation">
+    <!-- Background box -->
+    <rect x="420" y="80" width="350" height="450" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="2" rx="10"/>
+    
+    <!-- Title -->
+    <text x="595" y="110" text-anchor="middle" font-size="18" font-weight="bold" fill="#2c3e50">
+      How They Connect
+    </text>
+    
+    <!-- Chromosome explanation -->
+    <circle cx="450" cy="140" r="8" fill="#e74c3c"/>
+    <text x="470" y="135" font-size="14" font-weight="bold" fill="#2c3e50">Chromosome</text>
+    <text x="470" y="150" font-size="12" fill="#7f8c8d">• X-shaped structure visible during</text>
+    <text x="475" y="165" font-size="12" fill="#7f8c8d">cell division</text>
+    <text x="470" y="180" font-size="12" fill="#7f8c8d">• Contains hundreds to thousands</text>
+    <text x="475" y="195" font-size="12" fill="#7f8c8d">of genes</text>
+    <text x="470" y="210" font-size="12" fill="#7f8c8d">• Humans have 46 chromosomes</text>
+    <text x="475" y="225" font-size="12" fill="#7f8c8d">(23 pairs)</text>
+    
+    <!-- Gene explanation -->
+    <circle cx="450" cy="260" r="8" fill="#27ae60"/>
+    <text x="470" y="255" font-size="14" font-weight="bold" fill="#2c3e50">Gene</text>
+    <text x="470" y="270" font-size="12" fill="#7f8c8d">• Specific DNA sequence</text>
+    <text x="470" y="285" font-size="12" fill="#7f8c8d">• Contains instructions for making</text>
+    <text x="475" y="300" font-size="12" fill="#7f8c8d">one protein</text>
+    <text x="470" y="315" font-size="12" fill="#7f8c8d">• Humans have ~20,000-25,000 genes</text>
+    <text x="470" y="330" font-size="12" fill="#7f8c8d">• Can vary in length (few hundred</text>
+    <text x="475" y="345" font-size="12" fill="#7f8c8d">to millions of base pairs)</text>
+    
+    <!-- DNA explanation -->
+    <circle cx="450" cy="380" r="8" fill="#3498db"/>
+    <text x="470" y="375" font-size="14" font-weight="bold" fill="#2c3e50">DNA</text>
+    <text x="470" y="390" font-size="12" fill="#7f8c8d">• Double helix structure</text>
+    <text x="470" y="405" font-size="12" fill="#7f8c8d">• Made of 4 bases: A, T, G, C</text>
+    <text x="470" y="420" font-size="12" fill="#7f8c8d">• A pairs with T, G pairs with C</text>
+    <text x="470" y="435" font-size="12" fill="#7f8c8d">• Stores genetic information</text>
+    <text x="470" y="450" font-size="12" fill="#7f8c8d">• Human genome has ~3 billion</text>
+    <text x="475" y="465" font-size="12" fill="#7f8c8d">base pairs</text>
+    
+    <!-- Analogy -->
+    <text x="595" y="495" text-anchor="middle" font-size="14" font-weight="bold" fill="#8e44ad">
+      Think of it like a library:
+    </text>
+    <text x="470" y="510" font-size="12" fill="#8e44ad">• Chromosome = Bookshelf</text>
+    <text x="470" y="525" font-size="12" fill="#8e44ad">• Gene = Individual book</text>
+    <text x="470" y="540" font-size="12" fill="#8e44ad">• DNA = The text inside the books</text>
+  </g>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#34495e"/>
+    </marker>
+  </defs>
+  
+  <!-- Scale indicators -->
+  <text x="50" y="580" font-size="10" fill="#95a5a6">Scale: Chromosome (microscopic) → Gene (molecular) → DNA (atomic level)</text>
+</svg>
