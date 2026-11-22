@@ -1,5 +1,5 @@
 - human boday has 13 trillion cells
-- every cell contains 23 paris of chromosomes - 23 from each parent.
+- every cell contains 23 pairs of chromosomes - 23 from each parent.
 - human body contains 20k - 25k genes
 
 
